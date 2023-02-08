@@ -77,7 +77,6 @@ export default {
   margin-bottom: 6px;
 }
 .input ::v-deep .el-input__inner {
-  height: 48px;
   border-radius: 0;
   font-size: 19px;
 }

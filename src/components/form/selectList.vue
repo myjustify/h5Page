@@ -108,11 +108,11 @@ export default {
     .list-item {
       box-sizing: border-box;
       width: 100%;
-      height: 48px;
       background: #FFFFFF;
-      padding: 0 16px;
-      line-height: 48px;
-      margin-bottom: 10px;
+      padding: 6px 16px;
+      margin-bottom: 2px;
+      line-height: 1.25em;
+      word-break: break-all;
       &.active {
         background: #FBC408;
         color: #FFFFFF;

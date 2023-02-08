@@ -281,15 +281,17 @@ export default {
           });
       ajaxBf
           .questionAdd({
-            data: params,
-            tk: this.tk,
-            ownerId: this.ownerId,
-            vehicleId: this.vehicleId,
+            data: {
+              questionVoList: params,
+              ownerId: this.ownerId,
+              vehicleId: this.vehicleId
+            },
+            tk: this.tk
           })
           .then(() => {
             Message({
-              message: "登录过期，请重新登录！",
-              type: "error",
+              message: "提交成功",
+              type: "success",
               duration: 2000,
             });
           })
@@ -309,10 +311,10 @@ export default {
       margin-bottom: 0;
     }
     .list {
-      .list-item {
-        height: 40px;
-        line-height: 40px;
-      }
+      //.list-item {
+      //  height: 40px;
+      //  line-height: 40px;
+      //}
     }
   }
 }
@@ -352,7 +354,7 @@ export default {
   .category {
     font-size: 18px;
     font-weight: bold;
-    color: #e12e17;
+    color: red;
     padding: 6px;
   }
 }
