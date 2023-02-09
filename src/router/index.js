@@ -3,6 +3,10 @@ import Router from 'vue-router'
 Vue.use(Router)
 export const constantRoutes = [
     {
+        path: '/',
+        component: () => import('@/views/home')
+    },
+    {
         path: '/bfQuestions',
         component: () => import('@/views/bfQuestions')
     }
