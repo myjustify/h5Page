@@ -1,12 +1,13 @@
-const port = 8080 // dev port
+// const port = 8080 // dev port
 module.exports = {
     publicPath: '/h5Page',
     outputDir: 'dist',
     assetsDir: 'static',
     productionSourceMap: false,
     devServer: {
-        port: port,
-        // open: true,
+        host: '127.0.0.1',
+        // port: port,
+        open: true,
         overlay: {
             warnings: false,
             errors: true
