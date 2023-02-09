@@ -288,7 +288,7 @@ export default {
           })
           .then(() => {
             Message({
-              message: "登录过期，请重新登录！",
+              message: "提交成功",
               type: "error",
               duration: 2000,
             });
