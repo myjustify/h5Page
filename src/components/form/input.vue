@@ -15,11 +15,11 @@
   </div>
 </template>
 <script>
-import { ElInput } from "element-ui";
+import { Input } from "element-ui";
 export default {
   name: "y-input",
   components: {
-    ElInput,
+    ElInput: Input,
   },
   props: {
     name: {

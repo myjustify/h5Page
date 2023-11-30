@@ -290,7 +290,7 @@ export default {
           })
           .then(() => {
             Message({
-              message: "提交成功",
+              message: "",
               type: "success",
               duration: 2000,
             });

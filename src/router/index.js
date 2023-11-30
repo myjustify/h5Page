@@ -9,6 +9,10 @@ export const constantRoutes = [
     {
         path: '/bfQuestions',
         component: () => import('@/views/bfQuestions')
+    },
+    {
+        path: '/jgQuestions',
+        component: () => import('@/views/jgQuestions')
     }
 ]
 const createRouter = () => new Router({

@@ -7,7 +7,7 @@
           :rules="calcRules(item)"
           :prop="item.name"
         >
-          <!-- <y-input
+          <y-input
             v-if="item.type === 'input'"
             :placeholder="item.placeholder || ''"
             :name="item.name"
@@ -16,7 +16,7 @@
             :value.sync="item.value"
             :required="item.required || false"
             @change="bindChange"
-          /> -->
+          />
           <y-select-list
             v-if="item.type === 'select-list'"
             :name="item.name"
@@ -48,13 +48,14 @@
   </div>
 </template>
 <script>
-// import YInput from "@/components/form/input";
+import YInput from "@/components/form/input";
 import YSelectList from "@/components/form/selectList";
 // import YDatePicker from "@/components/form/datePicker";
 export default {
   name: "y-form",
   components: {
     YSelectList,
+    YInput,
     SlotContent: {
       props: {
         content: {

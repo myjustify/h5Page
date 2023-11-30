@@ -11,3 +11,16 @@ export const ajaxBf = {
     });
   }
 };
+
+export const ajaxJg = {
+  questionAdd({ data, tk }) {
+    return request({
+      headers: {
+        tk: tk
+      },
+      url: `/pro/question/investigate/save`,
+      method: "post",
+      data: data
+    });
+  }
+};
